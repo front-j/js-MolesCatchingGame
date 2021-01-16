@@ -8,7 +8,7 @@ let count = 0;
 
 function Start() {
   btn.innerHTML = "<div>SCORE:  " + count + "</div>"; // 점수 창
-  btn.classList.remove("start")
+  btn.classList.remove("start");
   Timer(); // 타이머
 
   let mole = "";
@@ -17,7 +17,7 @@ function Start() {
     number = Math.floor(Math.random() * 9) + 1;
     mole = document.getElementById(number);
     mole.innerHTML = "<img class='target' src='images/up.png'/>";
-    
+
     function Down() {
       mole.innerHTML = "<img src='images/hole.png'/>";
     }
@@ -37,15 +37,13 @@ function Start() {
 
 // 게임 종료
 function Stop() {
-  clearInterval(upTime);
-  for (i = 0; i < 9; i++) {
-    hole[i].innerHTML = "<img src='images/hole.png'/>";
-  }
-  game.classList.add("end")
-  game.innerHTML="<div class='modal' onclick='location.reload()'><h2>"+count+" 점 입니다!</h2>다시 시작하려면 화면을 클릭해주세요.</div>"
+  game.classList.add("end");
+  game.innerHTML =
+    "<div class='modal' onclick='location.reload()'><h2>" +
+    count +
+    " 점 입니다!</h2>다시 시작하려면 화면을 클릭해주세요.</div>";
 }
 
 function Timer() {
-  const time = 30;
   window.setTimeout(Stop, 15000);
 }
