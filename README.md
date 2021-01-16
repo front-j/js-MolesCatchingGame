@@ -1,6 +1,8 @@
 # JavaScript로 두더지 잡기 게임 만들기
 <img src=images/result.gif width=420px height=500px></img>
 
+https://front-j.github.io/js-MolesCatchingGame/
+
 ## review
 #### 1. 게임 레이아웃
  - table태그를 사용하여 9개의 구멍 이미지를 넣어줌
