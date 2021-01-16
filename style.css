@@ -1,0 +1,73 @@
+.container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game{
+    margin: 0 auto;
+    width: 40%;
+    height: 600px;
+    background-color: #218c74;
+    cursor: url('images/cursor.png')3 30,auto;
+}
+.game:active{
+    cursor: url('images/active.png'),auto;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid;
+    border-bottom: none;
+}
+td{
+    width: 30%;
+    height: 30%;
+}
+
+button{
+    width: 40%;
+    height: 50px;
+    border: solid;
+    background: #ffb142;
+    font-size: 20px;
+}
+.start:hover{
+    filter: brightness(90%);
+    cursor: pointer;
+}
+.start:active{
+    filter: brightness(110%);
+}
+
+img{
+    width: 100%;
+    height: 120px;
+}
+
+.end{
+    opacity: .8;
+}
+.modal{
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+h2{
+    color: white;
+}
+
+@media screen and (max-width:800px){
+    .game{
+        width: 100%;
+    }
+    button{
+        width:100%
+    }
+}
+@media screen and (max-height:610px){
+    .game{
+        height:400px;
+    }
+}
